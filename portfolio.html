@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            top: 0%;
+            right: 0%;
+            left: 0%;
+            background-color: rgb(130, 125, 125);
+            padding: 10px;
+            list-style-type: none;
+            position: fixed;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul {
+
+            display: flex;
+            justify-content: end;
+
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin-right: 30px;
+
+        }
+        #m{
+            position: absolute;
+            left: 10px;
+            top:-15px;
+        }
+        .container{
+            display:flex;
+            height:100px;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+        }
+        .child{
+            border: 2px solid black;
+            padding : 10px;
+            background-color: red;
+               
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul id="m">
+            <li><a href = "home.html"><h1>Iyyappan R</h1></a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+    </nav>
+    <div class = "container">
+        <div class = "child"></div>
+        <div class = "child"></div>
+        <div class = "child"></div>
+    </div>
+
+</body>
+
+</html>
