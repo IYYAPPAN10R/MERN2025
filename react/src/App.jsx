@@ -1,18 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Child from './components/Child'
+import About from './Pages/About'
+import Contact from './Pages/Contact' 
+import Home from './Pages/home'
+import Skill from './Pages/Skill'
+import Form from './Pages/form'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
+  var arr = ['hii' , 'hello' , ' bye']
+  var user = {username : "iyyappan" , pass : "12345678"};
   return (
-    <>
-     <div>
-      <h1>Hello World</h1>
-     </div>
-     <div><h1>Hello</h1></div>
-    </>
+    <div>
+       <Child name = "iyyappan"/>
+       <Home items= {arr} users= {user}/>
+       <About/>
+       <Contact/>
+       <Skill/>
+    </div>
   )
 }
 
