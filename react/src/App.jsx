@@ -5,17 +5,31 @@ import Contact from './Pages/Contact'
 import Home from './Pages/home'
 import Skill from './Pages/Skill'
 import Form from './Pages/form'
+import Navbar from './components/Navbar'
+import Count from './components/Count'
+import Hooks from './Pages/Hooks'
+import Effect from './Hooks/Effect'
+import State from './Hooks/State'
+import Login from './Pages/Login'
+import {Route , Router, Routes} from 'react-router-dom'
 
 const App = () => {
   var arr = ['hii' , 'hello' , ' bye']
   var user = {username : "iyyappan" , pass : "12345678"};
   return (
     <div>
-       <Child name = "iyyappan"/>
-       <Home items= {arr} users= {user}/>
-       <About/>
-       <Contact/>
-       <Skill/>
+       <Navbar/>
+       <Login/>
+       <Routes>
+          <Route path = '/about' element = {<About/>}/>
+          <Route path = '/home' element = {<Home items = {arr}/>}/>
+          <Route path = '/hooks' element ={<Hooks/>}/>
+          <Route path = '/state' element = {<State/>}/>
+          <Route path = '/effect'  element = {<Effect/>}/>
+          
+       </Routes>
+       
+        
     </div>
   )
 }
