@@ -11,6 +11,8 @@ import Hooks from './Pages/Hooks'
 import Effect from './Hooks/Effect'
 import State from './Hooks/State'
 import Login from './Pages/Login'
+import Ref from './Hooks/Ref'
+import Reducer from './Hooks/Reducer'
 import {Route , Router, Routes} from 'react-router-dom'
 
 const App = () => {
@@ -26,6 +28,8 @@ const App = () => {
           <Route path = '/hooks' element ={<Hooks/>}/>
           <Route path = '/state' element = {<State/>}/>
           <Route path = '/effect'  element = {<Effect/>}/>
+          <Route path = '/ref' element = {<Ref/>}/>
+          <Route path = '/reducer' element = {<Reducer/>}/>
           
        </Routes>
        
